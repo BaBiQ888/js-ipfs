@@ -1,0 +1,322 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_admin",
+						"type": "address"
+					}
+				],
+				"name": "addAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_server",
+						"type": "address"
+					}
+				],
+				"name": "addServer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "approveStake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_admin",
+						"type": "address"
+					}
+				],
+				"name": "delAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_server",
+						"type": "address"
+					}
+				],
+				"name": "delServer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentDayTimestamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "stake",
+						"type": "address"
+					}
+				],
+				"name": "initContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "erc20Token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "consAddress",
+						"type": "address"
+					}
+				],
+				"name": "initToken",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "isAdmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_server",
+						"type": "address"
+					}
+				],
+				"name": "isServer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "mid",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CenterContract.sol": "CenterContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2",
+				"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"contracts/Auth.sol": {
+			"keccak256": "0x11fb0d14797e98848ce8c68672bbd10797995cb67ab6bdfec6d23b2da01c9ad5",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://1fd71bbdc0fdcec6c4e866faec2aa107b392970711c68c8573df1c97c15a377f",
+				"dweb:/ipfs/QmeHLWEGWuF29RCSuBLu3xmJ8cHzk7SVbV3fpYtvRrVRkW"
+			]
+		},
+		"contracts/CenterContract.sol": {
+			"keccak256": "0xb25728f8b1553f31ba8d40fc9e88d9d0f3b07af986bd2cae8043d70fbe8eec50",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://5f9dd598361229bbe99ecaa1c46a1fdaeed3bb5a58770a8c036e951d489de3f9",
+				"dweb:/ipfs/QmS6k3UH4sFwCY3cR7YEgEXCGAJMBEsakr6ep2kN11F3dw"
+			]
+		},
+		"contracts/interfae/IConstant.sol": {
+			"keccak256": "0xe6d2d54f6e20b9ff076e90c523a1e2cb5cde1f0f88bfaed297de7cb635e61ffe",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c6bb721a2a56b26d5140c38740199bcf9b4bcedd1a3f612505ac33cd31e0c616",
+				"dweb:/ipfs/QmSDbtTQ7S2yj4Yfsx4h3cYvUTZR6K6L1i4LKPJRgGhVWi"
+			]
+		},
+		"contracts/interfae/IStake.sol": {
+			"keccak256": "0xe78c6ab0ada30517a837b573e44a867f27dcd0963036ea4c3bf3b86fca9955b7",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://41f3a208f8fa6a425d00f110f235af760aff4f8185830ec9686f38369d70a6f9",
+				"dweb:/ipfs/QmZKUeJRHtK5Ka7a4997C7B898cxbouK4dzWRYKmvDHMJS"
+			]
+		},
+		"contracts/library/BokkyPooBahsDateTimeLibrary.sol": {
+			"keccak256": "0x37bccca79ff17c775f336977703f77231f2472a3a91a2a56845ccdd3d0a997d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://704acf421d995e940acde55221e8db609ee6df7593f3cbe2736badd9c101418f",
+				"dweb:/ipfs/QmbecJeP6eTfpBhbSWZqmgmU7NL9Ju4Hhy1vvLz8uqff1A"
+			]
+		}
+	},
+	"version": 1
+}

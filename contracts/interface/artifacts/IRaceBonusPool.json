@@ -1,0 +1,109 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"claim(uint256)": "379607f5",
+			"distribute(address,uint256[],uint256,uint256,address[],uint256[])": "25ef3e40"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "nft_id",
+					"type": "uint256"
+				}
+			],
+			"name": "claim",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_raceCourse",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "_tokenIds",
+					"type": "uint256[]"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_money",
+					"type": "uint256"
+				},
+				{
+					"internalType": "uint256",
+					"name": "count",
+					"type": "uint256"
+				},
+				{
+					"internalType": "address[]",
+					"name": "lstAddress",
+					"type": "address[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "lstAmount",
+					"type": "uint256[]"
+				}
+			],
+			"name": "distribute",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}

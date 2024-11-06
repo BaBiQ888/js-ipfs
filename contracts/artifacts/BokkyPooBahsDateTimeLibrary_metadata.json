@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BokkyPooBahsDateTimeLibrary.sol": "BokkyPooBahsDateTimeLibrary"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BokkyPooBahsDateTimeLibrary.sol": {
+			"keccak256": "0xa91f54444d22ed6c6dde1e9672e4f18f93742abfb0c540237191133c4b6d2c40",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://19709b883f07b0f335d2ef585d9362b8387220fe3fa67cc4d00ea33f803d7c0a",
+				"dweb:/ipfs/QmbLNLM6Hk9ZhMAdejh4DC5Pe2MdiYyg8huFh7ZxQh6tFw"
+			]
+		}
+	},
+	"version": 1
+}

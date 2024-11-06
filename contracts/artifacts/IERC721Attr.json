@@ -1,0 +1,516 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "",
+			"opcodes": "",
+			"sourceMap": ""
+		},
+		"gasEstimates": null,
+		"methodIdentifiers": {
+			"checkArrayValue(uint256,string,bytes)": "c5dd2a4f",
+			"clearUniques(address,string,bytes)": "89274885",
+			"delArrayValue(uint256,string)": "6c8131a7",
+			"delFiled(address,string)": "ba3258e3",
+			"delValues(address,uint256,string)": "2942d3b0",
+			"getArrayCount(uint256,string)": "5f599f93",
+			"getArrayValue(uint256,string)": "8d7b2428",
+			"getAuth(address,string)": "fb7cd6e4",
+			"getType(address,string)": "10976bde",
+			"getUniques(address,string,bytes)": "642b4d08",
+			"getValue(address,uint256,string)": "74bdc66e",
+			"removeArrayValue(uint256,string,bytes)": "ad487a2d",
+			"setArrayValue(uint256,string,bytes)": "d4a419d3",
+			"setFiled(address,string[],uint256[],uint256[])": "9ca360f2",
+			"setUniques(address,string,bytes)": "ba36cefb",
+			"setValues(address,uint256,string,bytes)": "55290c1b"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "checkArrayValue",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "clearUniques",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "delArrayValue",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "delFiled",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "delValues",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "getArrayCount",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "getArrayValue",
+			"outputs": [
+				{
+					"internalType": "uint256[]",
+					"name": "",
+					"type": "uint256[]"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "getAuth",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "getType",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "getUniques",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				}
+			],
+			"name": "getValue",
+			"outputs": [
+				{
+					"internalType": "bytes",
+					"name": "result",
+					"type": "bytes"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "removeArrayValue",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "setArrayValue",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string[]",
+					"name": "field",
+					"type": "string[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "types",
+					"type": "uint256[]"
+				},
+				{
+					"internalType": "uint256[]",
+					"name": "auth",
+					"type": "uint256[]"
+				}
+			],
+			"name": "setFiled",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "setUniques",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "addr",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "tokenId",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "field",
+					"type": "string"
+				},
+				{
+					"internalType": "bytes",
+					"name": "value",
+					"type": "bytes"
+				}
+			],
+			"name": "setValues",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		}
+	]
+}
